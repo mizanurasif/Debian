@@ -1,5 +1,5 @@
 
-
+<p>
 1.	What is the main objective of unsupervised learning?
 
 A)	To learn a mapping from inputs to outputs
@@ -1383,3 +1383,4 @@ W1 = ■(0.8&0.4@0.2&0.6)  and biases b1 = [0.1, 0.2], compute the weighted sum 
 	It only works of deterministic environment
 	Its model is much complex
 	It’s a model-free algorithm
+	</p>
