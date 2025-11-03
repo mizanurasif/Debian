@@ -1,59 +1,39 @@
-private void InitializeComponent()
-{
-    System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomMsgBox));
-    this.button1 = new System.Windows.Forms.Button();
-    this.progressBar1 = new System.Windows.Forms.ProgressBar();
-    this.label1 = new System.Windows.Forms.Label();
-    this.SuspendLayout();
-    // 
-    // button1
-    // 
-    this.button1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-    this.button1.Location = new System.Drawing.Point(233, 96);
-    this.button1.Name = "button1";
-    this.button1.Size = new System.Drawing.Size(112, 29);
-    this.button1.TabIndex = 0;
-    this.button1.Text = "Stop Trace";
-    this.button1.UseVisualStyleBackColor = true;
-    this.button1.Click += new System.EventHandler(this.button1_Click);
-    // 
-    // progressBar1
-    // 
-    this.progressBar1.ForeColor = System.Drawing.Color.Green;
-    this.progressBar1.Location = new System.Drawing.Point(15, 34);
-    this.progressBar1.MarqueeAnimationSpeed = 10;
-    this.progressBar1.Maximum = 1000;
-    this.progressBar1.Name = "progressBar1";
-    this.progressBar1.Size = new System.Drawing.Size(570, 18);
-    this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-    this.progressBar1.TabIndex = 1;
-    // 
-    // label1
-    // 
-    this.label1.AutoSize = true;
-    this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-    this.label1.Location = new System.Drawing.Point(11, 8);
-    this.label1.Name = "label1";
-    this.label1.Size = new System.Drawing.Size(316, 21);
-    this.label1.TabIndex = 2;
-    this.label1.Text = "Running dotnet trace...";
-    // 
-    // CustomMsgBox
-    // 
-    this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-    this.ClientSize = new System.Drawing.Size(595, 131);
-    this.Controls.Add(this.label1);
-    this.Controls.Add(this.progressBar1);
-    this.Controls.Add(this.button1);
-    this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-    this.MaximizeBox = false;
-    this.MinimizeBox = false;
-    this.Name = "CustomMsgBox";
-    this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-    this.Text = "Tizen .NET Diagnostics";
-    this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CustomMsgBox_FormClosing);
-    this.ResumeLayout(false);
-    this.PerformLayout();
+•	Tizen Doctor
 
-}
+1.	Verify VS Command
+•	Implement a class to check the installation and version of Visual Studio extension for Tizen.
+•	Implement a class to check the installation of Visual Studio.
+•	Implement a class to check if all the required VS Workload/toolsets is installed.
+2.	Check Chrome browser and default browser installation status for verify Web Commad.
+•	Check if chrome is installed or not.
+•	Report Chrome path if installed.
+•	Check which is default browser set in the system.
+3.	http proxy checker and set-http-proxy command
+•	Check whether user’s system network needs HTTP proxy setting.
+•	Provide information regarding command to set HTTP Proxy in Tizen doctor tool.
+4.	Implement a class to check and report whether host system supports HW Acceleration for Emulator execution 
+•	Check if system supports CPU virtualization for emulator execution.
+•	Check if it's Windows or Linux, to decide whether to use
+a.	KVM (for Linux)
+b.	HAXM/WHPX(Hyper-V)(Windows)
+•	Verify if the CPU is of Intel or AMD, to decide whether to use
+o	WHPX (Hyper-V)(AMD)
+o	HAXM/WHPX (Windows)
+•	Verify if HAXM/Hyper-V/KVM is installed / enabled or not.
+•	Report the install status and help guide.
+
+5.	Tizen Doctor Diagnostic Tool Enhancements
+•	Set command: It been added to create presets for external tools.
+•	List command: Displays all stored diagnostic tools and their conditions
+•	Show Command: Displays the stored conditions of a specific tool in JSON format
+•	Remove Command: Deletes a specific condition of a tool.
+•	Update Command: Updates a specific condition of a tool with a new JSON file.
+•	verify command: produces clear and script-friendly results.
+•	Preset security: 
+o	Protection via File System Permissions(hard Task)
+o	Implement a Preset "Lock" Mechanism
+o	Verify Integrity with a Checksum
+•	Improve summary section of the tizen doctor Command
+•	Fix Sam/CQM Score
+•	Documentaion: Write the whole Documentation for tizen Doctor(give importance)
+•	TastCase:  Write the all test case for Tizen Doctor(give importance) 
