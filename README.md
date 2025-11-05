@@ -1,14 +1,22 @@
-•	Remote Logger
-•       Re implement the all the necessary class and previous loggers
-•	      Find out the places for all types of logger in the whole project where log should be implemented  
-•	      remote logger access, usage, create, install running, install and first_access
-•	Vs Dark Theme
-•	      Make a dark theme version for .Net Core Diagnostic( dotnet-dump, dotnet-trace, dotnet-gcdump) and others popup, menus etc  
-•	Tizen memory Profiler
-•	      Ensure that correct TMP is install from Tizen VS Vsix after update
-•	Documentation
-•	      Write the documentation for Create app, Debug Tizen app, Configure App, Hybrid App Development, Manifest and config Editor , Tizen .Net Hot Reload, Documentation of Web app unit Test
-•	Test Case written for web unit test and improve other tast case
-•	Basic Verification test
-•	      Execute the Test Multiple time on difference release
-•	      Test on differnet Archtecure RiscV,arm,arc,X64
+Remote Device Detection Issue In Device Manager: 
+1. A very specific issue only happen on mac os
+2. Completely new repo and learn the how the device manager work
+3. This project can not be build on local and it takes more then 1h to build on DIBS and code changes does not reflect on Device manager
+
+Emulator Manager Can not  Download  new image
+2.	A new project to lean how the Emulator manager work
+3.	Fix all build error To run on local pc
+4.	Find out which part of the code causing the error and fixed code
+
+Tizen .NET Profiler in Visual Studio fails to profile projects within folders in a solution 
+1. Change the of code of the tizen  project detection for profiler to detect the the project which is withen folder
+
+Package Manager  Did not set the right value for "Repository URL" on Configuration in Package manager and Emulator version in Package Manager is not synced
+1. A new project to lean how the Package Manager work
+2. Fix all build error To run on local pc
+3. Find out which part of the code causing the error and fixed code
+
+RiscV Setup To development and Test:
+1. The RiscV board in not booting, tried with diffent memory card ,different configuration and read RiscV manual to reselve the issue
+2. After rebooting , the display in not show, to fiz this issue tried with multiple binary , cable differnent setup etc
+3. Also need to check  Excort exception either it is hampering RiscV board   to booting or display not showing
