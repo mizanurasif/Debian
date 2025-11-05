@@ -130,3 +130,13 @@ on others
 •	Consistently followed all organizational attendance policies
 •	Actively participated in stakeholder and cross-team meetings on time
 •	Strictly adhered to security rules and Code of Conduct with zero violations
+
+
+
+Throughout this year, I have consistently demonstrated dedication, ownership, and strong problem-solving skills across multiple critical Tizen components, including Tizen Doctor, VS Extension, Device Manager, Emulator Manager, Package Manager, and RISC-V setup. I took responsibility for complex tasks that required learning new systems from scratch for example java, JavaScript etc and delivered impactful results that improved product stability, security, and user experience.
+
+I successfully completed all feature in Tizen doctor development, resolved critical issues that assign to me, and produced full documentation and test coverage to support long-term reliability. Alongside my project contributions, I improved communication, teamwork, discipline, and professional skills while continuously upgrading my technical capabilities through certifications and training. Based on the scope, difficulty, and success of the work I delivered.
+
+In the Innovation and Improvement category, I believe I have delivered a quite good performance this year. I actively contributed new ideas, including two proposals—AI Math Assistant for Samsung Notes and Gigapixel Mobile Experience—showing initiative and creativity even though they did not become successful yet. I continuously improved my technical competencies by successfully passing both the SWC Professional Exam and the Samsung AI Basic Exam with an excellent score. Additionally, I completed 43+ hours of advanced training in Python and Deep Learning through Samsung-U, reinforcing my skills in emerging technologies to follow Samsung future goal. Overall, I demonstrated a proactive learning mindset, good innovation effort, and a commitment to future-ready skills that contribute to Samsung's long-term growth.
+
+I believe I have shown strong soft skills throughout the year. I maintained clear and regular communication with PLs, co-developers, and cross-team members, which helped in timely issue resolution and smooth project progress. I always take full ownership of my assigned tasks and ensure they are completed independently with high quality. Along with that, I consistently followed company discipline, attended meetings on time, and strictly adhered to all security and compliance rules. Overall, I demonstrated responsibility, teamwork, and professionalism in every task and interaction.
