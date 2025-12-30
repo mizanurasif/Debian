@@ -34,3 +34,24 @@ export async function apiGet<T = unknown>(
   const res = await ax.get<T>(url, config);
   return res.data;
 }
+
+
+export const getAllDevices = async (): Promise<IDeviceInfo[]> => {
+  try {
+    const data = await apiGet<
+      { status: 'success'; devices: IDeviceInfo[] } | { status: 'error'; message: string }
+    >('/api/v1/devices');
+
+    if (data.status === 'success') {
+      data.devices = data.devices.map((d) => ({
+        ...d,
+        capabilityMap: new Map<string, string>(Object.entries(d.capabilityMap!))
+      }));
+      return data.devices;
+    }
+    logInfo(`Error:${data.message}`);
+    return [];
+  } catch {
+    return [];
+  }
+};
